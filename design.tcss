@@ -1,0 +1,104 @@
+Screen {
+    background: #0f1419;
+    layout: horizontal;
+    align: center middle;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background: #1a1f24;
+    border: thick #00d4aa 50%;
+}
+
+Static {
+    content-align: center middle;
+    background: transparent;
+    color: #ffffff;
+    height: 1fr;
+    text-align: center;
+    text-style: bold;
+}
+
+.column {
+    width: 1fr;
+    height: 100%;
+    margin: 1;
+}
+
+.left-column {
+    background: #1a1f24;
+    padding: 2;
+    border: solid #00a085;
+    border-title-align: center;
+    border-title-color: #ff6b35;
+    border-title-style: bold;
+}
+
+.right-column {
+    background: #1a1f24;
+    padding: 2;
+    border: solid #00a085;
+    border-title-align: center;
+    border-title-color: #ff6b35;
+    border-title-style: bold;
+}
+
+#task-table {
+    height: 22;
+    content-align: center top;
+    border: thick #06ffa5;
+    background: #232930;
+    # margin: 1 0;
+}
+
+#task-table > .datatable--header {
+    background: #00d4aa;
+    color: #000000;
+    text-style: bold;
+}
+
+#task-table > .datatable--odd-row {
+    background: #2d343c;
+}
+
+#task-table > .datatable--even-row {
+    background: #232930;
+}
+
+#task-table > .datatable--cursor {
+    background: #4de0c1;
+    color: #000000;
+    text-style: bold;
+}
+
+#image {
+    padding: 1;
+    border: solid transparent;
+    width: 40%;
+    height: auto;
+    max-width: 40%;
+    max-height: 40%;
+}
+
+.info-panel {
+    content-align: left top;
+    text-align: left;
+    padding: 2;
+    background: #232930;
+    border: round #ff6b35;
+    color: #ffffff;
+    margin: 1 0;
+    height: auto;
+}
+
+/* Специальный стиль для отображения времени */
+Static:first-child {
+    color: #00d4aa;
+    text-style: bold;
+    background: #232930;
+    border: round #00d4aa 50%;
+    padding: 1;
+    margin: 1 0;
+}
